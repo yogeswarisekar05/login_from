@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="catainers">
+        <center>
+            <h1 style="margin-top: 10px; color: rgb(255, 0, 247)" >
+              Registration Form
+            </h1>
+          </center>
+        <form class="tamil" action="">
+          
+          <div class="container">
+            <div class="name">
+              <label>NAME:</label>
+              <input type="text" placeholder="enter your name" id="name" required/>
+              <i
+                class="fa-solid fa-user"
+                style="
+                  color: #050505;
+                  position: relative;
+                  bottom: 25px;
+                  left: 80%;
+                "
+              ></i>
+              <span class="alt" id="nameerror" style="color: red"
+                >enter your name</span
+              >
+            </div>
+
+            <div class="password">
+              <label>PASSWORD:</label><br/>
+              <input
+                type="password"
+                id="password"
+                placeholder="enter your password"
+                required
+              />
+              <i
+                class="fa-solid fa-eye"
+                id="eyeicon"
+                style="
+                  position: relative;
+                  bottom: 25px;
+                  left: 80%;
+                  color: black;
+                  cursor: pointer;
+                "
+              ></i>
+              <span class="alt" id="passworderror" style="color: red" ;
+                >Password must be at least 8
+              </span>
+            </div>
+
+            <div class="email">
+              <label>EMAIL:</label><br />
+              <input type="email" placeholder="enter your email" id="email" required/>
+              <i
+                class="fa-solid fa-envelope"
+                style="
+                  color: black;
+                  bottom: 25px;
+                  left: 80%;
+                  position: relative;
+                "
+              ></i>
+              <span class="alt" id="emailerror" style="color: red"
+                >enter your email</span
+              >
+            </div>
+
+            <div class="address">
+              <label>ADDRESS:</label><br />
+              <input
+                type="text"
+                placeholder="enter your address"
+                id="address"
+              />
+              <i
+                class="fa-solid fa-house"
+                style="
+                  color: #0a0a0a;
+                  left: 80%;
+                  bottom: 25px;
+                  position: relative;
+                "
+              ></i>
+              <span class="alt" id="addresserror" style="color: red"
+                >enter your address</span
+              >
+            </div>
+
+            <div class="remember">
+              <input type="checkbox" name="remember" />remember me
+            </div>
+
+            <div class="test" style="margin: 15px">
+              <button type="button" onclick="fun()">submit</button>
+              <input type="reset" onclick="set()" />
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- <footer>
+
+    </footer> -->
+  </body>
+  <script src="./script.js"></script>
+</html>
